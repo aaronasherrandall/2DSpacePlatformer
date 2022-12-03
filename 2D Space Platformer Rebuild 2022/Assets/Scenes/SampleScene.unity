@@ -2234,7 +2234,7 @@ MonoBehaviour:
   weaponSprite: {fileID: 1342379514}
   firingPoint: {fileID: 1359554901}
   pivot: {fileID: 1205588970}
-  projectilePrefab: {fileID: 5737917334415616369, guid: 15e3184162939a54881b2d57a37a2a52, type: 3}
+  projectilePrefab: {fileID: 1459154350982722, guid: 5f6c6cda55c239448b52a9473aad6963, type: 3}
   projectileSpeed: 10
   projectileLifTime: 5
   firingRate: 1
