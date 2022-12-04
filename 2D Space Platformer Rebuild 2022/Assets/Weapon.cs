@@ -10,7 +10,8 @@ public class Weapon : MonoBehaviour
     //[SerializeField] Transform gunUp, gunDown, gunLeft, gunRight;
     [SerializeField] Transform pivot;
 
-    [SerializeField] GameObject projectilePrefab;
+    
+    [SerializeField] GameObject shootEffect;
     [SerializeField] float projectileSpeed = 10f;
     [SerializeField] float projectileLifTime = 5f; //5 seconds
     [SerializeField] float firingRate = 2f;
@@ -69,7 +70,9 @@ public class Weapon : MonoBehaviour
     {
         while (true)
         {
-            GameObject instance = Instantiate(projectilePrefab, firingPosition.transform.position, Quaternion.identity);
+            //For Particle Effect
+            //ParticleSystem instance = Instantiate(shootEffect, firingPosition.transform.position, Quaternion.identity);
+            GameObject instance = Instantiate(shootEffect, firingPosition.transform.position, Quaternion.identity);
             instance.transform.up = FireDirection();
             Debug.Log("Instantiated Prefab");
 
